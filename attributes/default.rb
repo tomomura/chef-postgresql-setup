@@ -1,3 +1,3 @@
 default[:postgresql_setup][:users] = [
-  { name: 'vagrant', password: 'vagrant', privileges: [ :all ] }
+  { name: 'vagrant', password: 'vagrant', privileges: [ :all ], superuser: true }
 ]

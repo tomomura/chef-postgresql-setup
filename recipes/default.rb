@@ -21,6 +21,7 @@ node[:postgresql_setup][:users].each do |user_info|
     connection postgresql_connection_info
     password user_info[:password]
     privileges user_info[:privileges]
+    superuser user_info[:superuser]
     action :create
   end
 end
